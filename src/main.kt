@@ -40,10 +40,7 @@ fun main(arg: Array<String>) {
     massive += formas
 
 //coordinate check
-//проверка ошибки ввода координат
-    if (massive.size % 2 != 0) {
-        println("Некоторые координаты введены не верно!\nПроверьте $coord ")
-    }
+    check(massive.size,coord)
 
     var pointX = emptyArray<Int>()
     var pointY = emptyArray<Int>()
@@ -113,4 +110,11 @@ public fun distance(x1: Double, y1: Double, x2: Double, y2: Double): Int {
     var d: Double
     d = sqrt(((x2 - x1).pow(2)) + ((y2 - y1).pow(2)))
     return d.toInt()
+}
+
+//coordinate check
+fun check(x:Int,s:String){
+    if (x % 2 != 0) {
+       println("Некоторые координаты введены не верно!\nПроверьте $s ")
+    }
 }
