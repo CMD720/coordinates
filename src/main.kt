@@ -53,6 +53,7 @@ fun main(arg: Array<String>) {
     }
 //find the closest point of origin
 //находим ближайшую точку к началу координат
+
     var a: Int
     var b = 0
     var start = distance(0.0, 0.0, pointX[0].toDouble(), pointY[0].toDouble())
